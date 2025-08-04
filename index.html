@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get to Know Trees</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Common Trees and Their Facts</h1>
+        <nav>
+            <ul>
+                <li><a href="#information">Tree Guide</a></li>
+                <li><a href="#slideshow">Gallery</a></li>
+                <li><a href="#tree-form">Save your favorite tree</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--accordion-->
+        <div id="information">
+            <h3 data-tab="oak">Oak</h3>
+            <div>
+                <p>Can live to an old age and sturdy for many human applications</p>
+                <img src="images/oak.jpg" class="tab-image" data-image="oak" alt="Oak Tree">
+            </div>
+            <h3 data-tab="maple">Maple</h3>
+            <div>
+                <p>These ancients bring an array of beauty to the fall</p>
+                <img src="images/maple.jpg" class="tab-image" data-image="maple" alt="Maple Tree">
+            </div>
+            <h3 data-tab="willow">Willow</h3>
+            <div>
+                <p>The Willow is know for its beauty and also its medicinal properties.</p>
+                <img src="images/willow.webp" class="tab-image" data-image="willow" alt="Willow Tree">
+            </div>
+        </div>
+
+        <!-- gallery -->
+        <div id="slideshow">
+            <img src="images/oak.jpg" alt="Oak">
+            <img src="images/maple.jpg" alt="Maple">
+            <img src="images/willow.webp" alt="Willow">
+        </div>
+ 
+
+        <!-- storage for web -->
+        <div id="tree-form">
+            <input type="text" id="fav-tree" placeholder="trees that inspire you">
+            <button id="save-tree">save</button>
+            <p id="saved-tree"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for caring about trees!</p>
+    </footer>
+</body>
+</html>
