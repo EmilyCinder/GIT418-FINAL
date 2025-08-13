@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get to Know Trees</title>
+    <title>Get to Know Trees and sav your favorite </title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -11,6 +11,8 @@
 <body>
     <header>
         <h1>Common Trees and Their Facts</h1>
+
+         <!--nav-->  
         <nav>
             <ul>
                 <li><a href="#information">Tree Guide</a></li>
@@ -21,7 +23,7 @@
     </header>
 
     <main>
-        <!--accordion-->
+            <!--information tabs-->
         <div id="information">
             <h3 data-tab="oak">Oak</h3>
             <div>
@@ -34,13 +36,13 @@
                 <img src="images/maple.jpg" class="tab-image" data-image="maple" alt="Maple Tree">
             </div>
             <h3 data-tab="willow">Willow</h3>
-            <div>
-                <p>The Willow is know for its beauty and also its medicinal properties.</p>
-                <img src="images/willow.webp" class="tab-image" data-image="willow" alt="Willow Tree">
-            </div>
+                <div>
+                    <p>The Willow is know for its beauty and also its medicinal properties.</p>
+                    <img src="images/willow.webp" class="tab-image" data-image="willow" alt="Willow Tree">
+                </div>
         </div>
 
-        <!-- gallery -->
+         <!-- gallery -->
         <div id="slideshow">
             <img src="images/oak.jpg" alt="Oak">
             <img src="images/maple.jpg" alt="Maple">
@@ -48,16 +50,18 @@
         </div>
  
 
-        <!-- storage for web -->
-        <div id="tree-form">
-            <input type="text" id="fav-tree" placeholder="trees that inspire you">
-            <button id="save-tree">save</button>
-            <p id="saved-tree"></p>
-        </div>
+    <!-- storage for web -->
+            <div id="tree-form">
+                <input type="text" id="fav-tree" placeholder="trees that inspire you">
+                <button id="save-tree">save</button>
+                <p id="saved-tree"></p>
+            </div>
     </main>
 
     <footer>
         <p>Thank you for caring about trees!</p>
     </footer>
+
+
 </body>
 </html>
